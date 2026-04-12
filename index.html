@@ -129,7 +129,7 @@ function confirmarWhatsApp(event) {
         <br><br>
         <button id="enviarWA" style="
           padding: 12px;
-          width: 100%;
+          width: 50%;
           background: #25D366;
           color: #fff;
           border: none;
@@ -156,7 +156,7 @@ function confirmarWhatsApp(event) {
 
       fbq('trackCustom', 'WhatsAppNombreConfirmado');
 
-      let mensaje = `Hola soy ${nombre}, quiero reclamar mi bono del 100%.`;
+      let mensaje = `Hola soy ${nombre}, quiero reclamar mi bono del 50%.`;
       let url = "https://wa.me/5492236350229?text=" + encodeURIComponent(mensaje);
 
       window.location.href = url;
