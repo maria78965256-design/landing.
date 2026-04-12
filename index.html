@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bono 100% - Baireslots</title>
-  <meta name="description" content="Reclamá tu bono de bienvenida 100%. Atención personalizada por WhatsApp.">
+  <title>Bono 50% - GoldenLuck</title>
+  <meta name="description" content="Reclamá tu bono de bienvenida 50%. Atención personalizada por WhatsApp.">
   <style>
     body {
       margin: 0;
@@ -76,7 +76,7 @@
   <a href="#" onclick="confirmarWhatsApp(event)">
     <img 
       src="imagen.png" 
-      alt="Promo Baireslots">
+      alt="Promo GoldenLuck">
   </a>
 </div>
 
@@ -88,15 +88,15 @@
 function confirmarWhatsApp(event) {
   event.preventDefault();
 
-  if (confirm('¿Querés abrir WhatsApp para reclamar tu bono del 100%?')) {
+  if (confirm('¿Querés abrir WhatsApp para reclamar tu bono del 50%?')) {
     
     // Crear popup para ingresar nombre
     let popup = document.createElement("div");
     popup.style.position = "fixed";
     popup.style.top = "0";
     popup.style.left = "0";
-    popup.style.width = "100%";
-    popup.style.height = "100%";
+    popup.style.width = "50%";
+    popup.style.height = "50%";
     popup.style.background = "rgba(0,0,0,0.8)";
     popup.style.display = "flex";
     popup.style.justifyContent = "center";
@@ -157,7 +157,7 @@ function confirmarWhatsApp(event) {
       fbq('trackCustom', 'WhatsAppNombreConfirmado');
 
       let mensaje = `Hola soy ${nombre}, quiero reclamar mi bono del 100%.`;
-      let url = "https://wa.me/5492236722169?text=" + encodeURIComponent(mensaje);
+      let url = "https://wa.me/5492236350229?text=" + encodeURIComponent(mensaje);
 
       window.location.href = url;
     };
